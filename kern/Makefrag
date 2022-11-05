@@ -8,6 +8,7 @@
 OBJDIRS += kern
 
 KERN_LDFLAGS := $(LDFLAGS) -T kern/kernel.ld -nostdlib
+KERN_CFLAGS += -Wno-error
 
 # entry.S must be first, so that it's the first code in the text segment!!!
 #

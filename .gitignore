@@ -16,3 +16,7 @@
 /sol?/
 /myapi.key
 /.suf
+
+__pycache__
+.cache
+compile_commands.json
