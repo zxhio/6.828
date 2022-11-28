@@ -6,8 +6,12 @@
 
 Lab 的代码克隆自 *https://pdos.csail.mit.edu/6.828/2018/jos.git* 
 
-### QEMU 虚拟化支持
+### 依赖
 理论上只需要 qemu 提供软件虚拟化即可，所以硬件虚拟化非必要，libvirt 等相关组件也可以不需要；这里只安装 QEMU：*apt install qemu-kvm*
+
+出现 *"undefined reference to `__udivdi3'"* 需要安装 gcc-multilib *apt install gcc-multilib*
+
+测试用例需要依赖 python *apt install python2*
 
 ### Lab 相关变动
 安装 Lab1 的流程，执行 `make && make qemu` 之后会有报错，由于装的操作系统无桌面，gtk 也就没有安装。
