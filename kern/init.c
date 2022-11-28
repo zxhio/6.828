@@ -33,9 +33,11 @@ i386_init(void)
 	// Can't call cprintf until after we do this!
 	cons_init();
 
+	cprintf("\n");
 	cprintf("6828 decimal is %o octal!\n", 6828);
 
 	// Test the stack backtrace function (lab 1 only)
+	// case test_backtrace_count 匹配不了 ebp == 0 的情况，所以这里++
 	test_backtrace(5);
 
 	// Drop into the kernel monitor.
