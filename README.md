@@ -29,3 +29,8 @@ gtk initialization failed
 - gdb 接受 gdb 的远程连接，后续 *make gdb* 调试会使用到这个点
 
 *make qemu-gdb* 和 *make qemu* 多了一个参数 `-S`，作用为 freeze CPU at startup。
+
+
+### Lab 相关说明
+
+- [Lab1](./doc/lab1.md)
